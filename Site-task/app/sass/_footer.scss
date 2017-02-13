@@ -1,0 +1,104 @@
+.footer-section{
+	padding: 60px 0;
+	background-image: url(../images/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	h2{
+		margin-bottom: 45px;
+		font-size: 24px;
+		color: #fff;
+	}
+}
+.footer-header{
+	padding-bottom: 55px;
+	border-bottom: 1px solid #6c6968;
+}
+.subscribe{
+	width: 50%;
+	min-width: 310px;
+	position: relative;
+	display: inline-block;
+	input[type=text]{
+		width: 100%;
+		height: 60px;
+		padding-left: 10px;
+		border: 1px solid #6c6968;
+		border-radius: 30px;
+		background-color: #505357;
+		opacity: .7;
+		&::-webkit-input-placeholder{
+			font-family: "gothambook";
+			font-size: 18px; 
+			color: #fff; 
+		}
+		&::-moz-placeholder{
+			font-family: "gothambook";
+			font-size: 18px; 
+			color: #fff;
+		}
+		&:-moz-placeholder{
+			font-family: "gothambook";
+			font-size: 18px; 
+			color: #fff;
+		}
+		&:-ms-input-placeholder{
+			font-family: "gothambook";
+			font-size: 18px; 
+			color: #fff;
+		}
+	}
+	input[type="submit"]{
+		width: 120px;
+		height: 50px;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		border: none;
+		border-radius: 30px;
+		background-color: $button-color;
+		font-size: 14px;
+		color: #fff;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+}
+.footer-main{
+	width: 100%;
+	padding-top: 40px;
+	text-align: left;
+	span{
+		border-bottom: 1px solid #a09e9b;
+		font-size: 16px;
+		color: #fff;
+	}
+	ul{
+		padding-top: 10px;
+		font-family: 'gothambook';
+		font-size: 14px;
+		color: #a09e9b;
+		li{
+			margin-top: 10px;
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+.footer-block{
+	width: 33.3%;
+	float: left;
+}
+.footer-icons{
+	padding: 23px 0 63px 0;
+	a{
+		padding: 0 10px 0 10px;
+		font-size: 28px;
+		color: #fff;
+	}
+}
+.copyright{
+	font-family: 'gothambook';
+	font-size: 14px;
+	color: #a09e9b;
+}
