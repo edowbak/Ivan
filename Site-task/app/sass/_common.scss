@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+	font-family: 'gothammedium';
+}
+.clear-fix{
+	display: table;
+	clear: both;
+	content: '';
+}
+.container{
+	width: 100%;
+	max-width: 980px;
+	min-width: 300px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+}
+.active{
+	color: $button-color;
+}
+
+.filter-map-block{
+	display: inline-block;
+}

@@ -1,0 +1,174 @@
+.main-section{
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
+	background-color: #f3f1f2;
+}
+.main-section-block{
+	width: 49%;
+	max-width: 680px;
+	display: inline-block;
+	font-size: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.offer-block{
+	width: 50%;
+	margin-top: 30px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+.offer-price{
+	width: 65px;
+	height: 25px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 20px;
+	background-color: $first-icon-color;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+}
+.big{
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.offer-image{
+	height: 50%;
+	position: relative;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+.offer-border-1{
+	border-bottom: 3px solid $first-icon-color;
+}
+.offer-border-2{
+	border-bottom: 3px solid $second-icon-color;
+}
+.offer-border-3{
+	border-bottom: 3px solid $third-icon-color;
+}
+.offer-text{
+	padding: 35px 0 20px;
+	position: relative;
+	background-color: #fff;
+} 
+.big .offer-text{
+	padding-top: 0px;
+}
+.offer__icon{
+	width: 60px;
+	height: 60px;
+	top: -30px;
+	left: 50%;
+	margin-left: -30px;
+	position: absolute;
+	display: inline-block;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+}
+.big .offer__icon{
+	left: 50px;
+}
+.offer__label{
+	font-size: 14px;
+	color: #566375;
+}
+.offer__author{
+	margin-top: 30px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.offer__author-1{
+	color: $first-icon-color;
+}
+.offer__author-2{
+	color: $second-icon-color;
+}
+.offer__author-3{
+	color: $third-icon-color;
+}
+.offer__icon-1{
+	background-color: $first-icon-color;
+	padding-top: 13px;
+}
+.offer__icon-2{
+	background-color: $second-icon-color;
+	padding-top: 15px;
+}
+.offer__icon-3{
+	background-color: $third-icon-color;
+	padding-top: 15px;
+}
+.comment-block{
+	padding-left: 8px;
+}
+.comment-text{
+	width: 80%;
+	float: left;
+	text-align: left;
+	color: #747e8c;
+}
+.comment-avater{
+	width: 20%;
+	float: left;
+}
+.comment-label{
+	font-size: 16px;
+	font-weight: bold;
+}
+.comment{
+	padding-top: 10px;
+	font-size: 14px;
+}
+.offer__lvl{
+	padding-top: 5px;
+	font-size: 12px;
+	color: #f19e1f;
+}
+.offer__lvl-big{
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	font-size: 12px;
+	color: #f19e1f;
+	span{
+		margin-left: 5px;
+		color: #fff;
+	}
+	.lvl-label{
+		margin: 0 10px 0 0;
+		font-size: 16px;
+	}
+}
+.offer__lvl{
+	span{
+		margin-left: 5px;
+		color: #96a6a7;
+	}
+}
+.big .offer__lvl{
+	text-align: left;
+	padding: 15px 0 10px 90px;
+}
+.show-more{
+	padding: 35px 0;
+	border-bottom: 1px solid #d3d3d7;
+	text-align: center;
+	color: #566375;
+	clear: left;
+	span{
+		margin-right: 10px;
+		border-bottom: 2px solid #d3d3d7;
+		cursor: pointer;
+	}
+}
