@@ -47,6 +47,30 @@
 		height: 100%;
 	}
 }
+.offer-image-1, .offer-image-2, .offer-image-3{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .5s;
+	cursor: pointer;
+	&:hover .image-show-more{
+		display: block;
+	}
+	&:hover .image-lvl{
+		display: block;
+	}
+}
+.offer-image-1:hover{
+	background-color: rgba(27, 175, 39, .7);
+}
+.offer-image-2:hover{
+	background-color: rgba(241, 158, 31, .7);
+}
+.offer-image-3:hover{
+	background-color: rgba(136, 73, 156, .7);
+}
 .offer-border-1{
 	border-bottom: 3px solid $first-icon-color;
 }
@@ -170,5 +194,37 @@
 		margin-right: 10px;
 		border-bottom: 2px solid #d3d3d7;
 		cursor: pointer;
+	}
+}
+.image-show-more{
+	display: none;
+	width: 140px;
+	height: 40px;
+	border: 3px solid #fff;
+	border-radius: 20px;
+	margin: 20px auto 20px;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 35px;
+	span{
+		margin-left: 10px;
+	}
+}
+.offer-image-1 .image-show-more{
+	background-color: $first-icon-color;
+}
+.offer-image-2 .image-show-more{
+	background-color: $second-icon-color;
+}
+.offer-image-3 .image-show-more{
+	background-color: $third-icon-color;
+}
+.image-lvl{
+	display: none;
+	font-size: 16px;
+	color: #fff;
+	span{
+		margin-left: 20px;
 	}
 }
