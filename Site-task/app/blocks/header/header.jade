@@ -43,15 +43,29 @@ header.header
 	.search-form
 		.search-block.container
 			h2 What are you looking for?
+			.select-container.clear-fix
+				.select.select-1(data-select="1" data-selection="select-1")
+					span Some-1 option
+					<i class="fa fa-chevron-down"></i>
+
+					.select-item(data-selection="select-1" data-select="1")
+						span Some-1 option
+					.select-item(data-selection="select-2" data-select="1")
+						span Some-2 option
+					.select-item(data-selection="select-3" data-select="1")
+							span Some-3 option
+				.select.select-2(data-select="2" data-selection="select-4")
+					span Some-4 option
+					<i class="fa fa-chevron-down"></i>
+
+					.select-block(data-select="2")
+						.select-item(data-selection="select-4" data-select="2")
+							span Some-4 option
+						.select-item(data-selection="select-5" data-select="2")
+							span Some-5 option
+						.select-item(data-selection="select-6" data-select="2")
+							span Some-6 option
 			form
-				select.select
-					option Some option
-					option Some option
-					option Some option
-				select.select
-					option Some option
-					option Some option
-					option Some option
 				input(placeholder="Keyword, name, data...")
 				input(type="submit" value="Search")
 aside.filter.container.clear-fix
@@ -60,9 +74,9 @@ aside.filter.container.clear-fix
 		span Latest
 		span Highlights
 	.filter-select
-		select
-			option Some option
-			option Some option
+		.filter-map-select
+			span.filter-map-label Show map
+			<i class="fa fa-chevron-down"></i>
 		.filter-map-block
 			span.filter-map-label Show map
 			<i class="fa fa-map-marker"></i>

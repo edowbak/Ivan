@@ -111,7 +111,7 @@
 	padding-top: 55px;
 }
 .search-form{
-	height: 375px;
+	padding: 55px 0 35px 0;
 	background-image: url(../images/header-bg.jpg);
 	background-size: cover;
 	h2{
@@ -119,37 +119,21 @@
 		font-size: 30px;
 		color: #fff;
 	}
-	select{
-		width: 220px;
-	    -moz-appearance: none;
-	    text-indent: 0.01px; 
-	    text-overflow: '';
-	    -ms-appearance: none;
-	    appearance: none!important;
-	    background-image: url(../images/select-arrow.png);
-	    background-position: 95% center;
-	    background-repeat: no-repeat;
-	}
-	select::-ms-expand {
-  		display: none;
-	}
-	select, option, input{
-		height: 50px;
-		background-color: rgba(0, 0, 0, 0.2);
-		border: 1px solid #413f3a;
-		border-radius: 20px;
-		outline: none;
-	}
 	input{
 		display: block;
 		margin: 0 auto;
 		padding: 0 30px;
-		width: 470px;
+		width: 50%;
+		height: 50px;
 		margin-top: 20px;
 		text-align: center;
 		font-family: "gothambook";
 		font-size: 16px; 
 		color: #fff;
+		border: 1px solid #6c6c69;
+		border-radius: 20px;
+		background-color: rgba(255, 255, 255, .1);
+		outline: none;
 
 		&::-webkit-input-placeholder{
 			font-family: "gothambook";
@@ -188,4 +172,51 @@
 }
 .search-block{
 	text-align: center;
+}
+.select-container{
+	width: 50%;
+	height: 50px;
+	position: relative;
+	margin: 0 auto;
+}
+.select{
+	width: calc(50% - 10px);
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	float: left;
+	border: 1px solid #6c6c69;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, .2);
+	font-family: "gothambook";
+	font-size: 18px;
+	color: #d7d7d7;
+	line-height: 50px;
+	cursor: pointer;
+	transition: .5s;
+	span{
+		margin-right: 20px;
+	}
+	&:first-child{
+		left: 0px;
+	}
+	&:last-child{
+		right: 0px;
+	}
+	&:hover{
+	background-color: rgba(100, 100, 100, .9);
+	}
+}
+.select-block{
+	width: 100%;
+}
+.select-item{
+	width: 100%;
+	font-family: "gothambook";
+	font-size: 18px;
+	color: #d7d7d7;
+	cursor: pointer;
+	&:hover{
+		color: #fff;
+	}
 }

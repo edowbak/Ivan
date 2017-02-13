@@ -21,30 +21,26 @@
 	display: inline-block;
 	height: 40px;
 	line-height: 6px;
-	select, .filter-map-block{
+	.filter-map-select, .filter-map-block{
 		height: 35px;
+		float: left;
 		padding: 0 15px;
 	    border: 1px solid #cad2d3;
 	    border-radius: 20px;
 	}
-	select{
-		width: 115px;
-		 /* for FF */
-	    -moz-appearance: none;
-	    text-indent: 0.01px; 
-	    text-overflow: '';
-	    /* for IE */
-	    -ms-appearance: none;
-	    appearance: none!important;
-	}
 }
-.filter-map-block{
+.filter-map-select, .filter-map-block{
 	line-height: 31px;
 	margin-left: 10px;
 	padding: 0 15px;
 	cursor: pointer;
 	span{
 		margin-right: 5px;
+	}
+}
+.filter-map-select{
+	span{
+		color: $button-color;
 	}
 }
 .filter-map-icon{
