@@ -92,6 +92,7 @@ for(var i=2; i<someBuildArr.length; i++){
 	someBuildArr[0].animate({y:62}, 800);
 })();
 
+
 //*****************************************************
 
 var anotherBuild = s.select("#g2982");
@@ -192,6 +193,7 @@ function renderTrees(treeEl){
 	}
 };
 
+
 var cloud1 = s.select("#path9164");
 cloud1.transform("s0 0");
 cloud1.animate({"transform":"s1 1"}, 700);
@@ -208,13 +210,16 @@ var cloud4 = s.select("#path8733");
 cloud4.transform("s0 0");
 cloud4.animate({"transform":"s1 1"}, 700);
 
+
 var cloud5 = s.select("#path8731");
 cloud5.transform("s0 0");
 cloud5.animate({"transform":"s1 1"}, 700);
 
+
 var cloud6 = s.select("#path8727");
 cloud6.transform("s0 0");
 cloud6.animate({"transform":"s1 1"}, 700);
+
 
 var cloud7 = s.select("#path8623");
 cloud7.transform("s0 0");
@@ -236,6 +241,7 @@ function moveCloud(){
 	}
 }
 
+
 function switchLight(){
 	var bigBuildArr = s.select("#g7603");
 	var blinkWindows = bigBuildArr.selectAll("path");
@@ -249,5 +255,9 @@ function switchLight(){
 		blinkWindows[rand].attr({fill:"#f4f142"});
 	}, 3000);
 }
+
+
+
+
 
 firstBuildGrow();
