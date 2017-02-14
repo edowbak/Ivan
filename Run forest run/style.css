@@ -1,0 +1,10 @@
+body{
+	overflow: hidden;
+}
+.running-text{
+	position: relative;
+	left: 0;
+}
+.clickCatcher{
+	position: absolute;
+}

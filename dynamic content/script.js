@@ -1,7 +1,7 @@
 (function(){
 	function appendElemnt(){
 		var inputValue = $(".input__form").val();
-		$(".input-block").prepend("<div class=\"content\"><input type=\"text\" class=\"input_redact\" value=" + inputValue + " disabled=\"disabled\"><div class=\"save_button\"></div><div class=\"remove_button\"></div><div class=\"delete_button\"></div></div>")
+		$(".input-block").prepend("<div class=\"content\"><input type=\"text\" class=\"input_redact\" value=\"" + inputValue + "\" disabled=\"disabled\"><div class=\"save_button\"></div><div class=\"remove_button\"></div><div class=\"delete_button\"></div></div>")
 		$(".input__form").val("");
 	}
 	function removeElement(){
