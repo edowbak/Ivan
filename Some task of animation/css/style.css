@@ -1,0 +1,289 @@
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+*{
+	box-sizing: border-box;
+}
+section{
+	padding: 40px 0;
+}
+h2{
+	font-size: 30px;
+	color: #555;
+}
+.container{
+	width: 900px;
+	margin: 0 auto;
+	font-size: 0px;
+	text-align: center;
+	color: #fff;
+}
+
+            /***************************  Task 17 ***************************/
+
+.block-1, .block-2, .block-3{
+	width: 33.3%;
+	height: 300px;
+	display: inline-block;
+	text-align: center;
+	line-height: 300px;
+}
+.block-1{
+	background-color: #41d9f4;
+}
+.block-2{
+	background-color: #41f4cd;
+}
+.block-3{
+	background-color: #41f47c;
+}
+.button{
+	width: 160px;
+	height: 40px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid #fff;
+	font-size: 20px;
+	line-height: 40px;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*************************  Button-1 **********************/
+
+.button-1{
+	overflow: hidden;
+}
+.button-1:after{
+	display: block;
+	width: 200px;
+	height: 150px;
+	margin: 0 auto;
+	position: absolute;
+	top: 100px;
+	transform: rotate(45deg);
+	background-color: rgba(255, 255, 255, .3);
+	content: '';
+	transition: .6s;
+}
+.button-1:before{
+	display: block;
+	width: 150px;
+	height: 100px;
+	margin: 0 auto;
+	position: absolute;
+	top: 100px;
+	left: 25px;
+	transform: rotate(45deg);
+	background-color: rgba(255, 255, 255, .5);
+	content: '';
+	transition: .3s;
+}
+.button-1:hover:after{
+	top: 0px;
+	transition: .4s;
+}
+.button-1:hover:before{
+	top: 20px;
+	transition: .7s;
+}
+
+/****************************  Button-2 ****************************/
+
+.button-2{
+	border-left: 1px solid rgba(255, 255, 255, 1);
+	border-right: 1px solid rgba(255, 255, 255, 1);
+	border-top: none;
+	border-bottom: none;
+	transition: .5s;
+}
+.button-2:before, .button-2:after{
+	display: block;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	background-color: #fff;
+	content: '';
+	transition: .5s;
+}
+.button-2:after{
+	bottom: 0px;
+}
+.button-2:hover{
+	border-left: 1px solid rgba(255, 255, 255, 0);
+	border-right: 1px solid rgba(255, 255, 255, 0);
+}
+.button-2:hover:before, .button-2:hover:after{
+	top: 19px;
+}
+.button-2:hover:before{
+	transform: rotate(45deg);
+}
+.button-2:hover:after{
+	transform: rotate(-45deg);
+}
+
+/****************************  Button-3 ***************************/
+.button-3{
+	overflow: hidden;
+}
+.button-3:before, .button-3:after{
+	display: block;
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	top: -100px;
+	right: 100px;
+	transform: rotate(-90deg);
+	background-color: rgba(255, 255, 255, 1);
+	border-bottom: 1px solid #fff;
+	transition: .5s;
+	content: '';
+}
+.button-3:after{
+	background-color: rgba(255, 255, 255, 1);
+	transition: .7s;
+}
+.button-3:hover:before{
+	top: 0;
+	right: 0px;
+	transition: .3s;
+	background-color: rgba(255, 255, 255, 0);
+	transform: rotate(0deg);
+}
+.button-3:hover:after{
+	top: 0;
+	right: 0px;
+	transition: .5s;
+	background-color: rgba(255, 255, 255, 0);
+	transform: rotate(0deg);
+}
+
+                /********************** Task 18 **********************/
+.block-4{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	background-color: #f4a341;
+	font-size: 20px;
+	line-height: 150px;
+}
+.block-4:after{
+	display: block;
+	width: calc(100% + 20px);
+	height: 70px;
+	position: absolute;
+	left: -10px;
+	top: 150px;
+	transform: rotate(2deg);
+	background-color: #fff;
+	content: '';
+}
+
+/**************************  Task 20 *****************************/
+
+.slice{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	margin: 30px;
+	padding-top: 10px;
+	font-size: 18px;
+	color: #555;
+	font-family: Arial;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px 0px #555;
+	transition: .3s;
+}
+.slice:nth-child(odd){
+	background-color: #ccccff;
+	transform: rotate(5deg);
+}
+.slice:nth-child(even){
+	background-color: #ccffcc;
+	transform: rotate(-5deg);
+}
+.slice:hover{
+	box-shadow: 4px 4px 15px 0px #555;
+	transform: rotate(0deg);
+	transform: scale(1.5);
+}
+
+/*********************************  Task 22 **********************************/
+
+.wrap-2{
+	position: relative;
+	font-size: 20px;
+	color: #555;
+	text-align: left;
+}
+.form{
+	width: 250px;
+	height: 50px;
+	margin-left: 20px;
+	padding-left: 10px;
+	border: none;
+	border-top: 3px solid #555;
+	border-bottom: 3px solid #555;
+	outline: none;
+	font-size: 20px;
+	transition: .5s;
+}
+.wrap-2__span{
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	transition: .5s;
+}
+.form:focus{
+	height: 70px;
+	margin-top: -20px;
+}
+.form:focus + .wrap-2__span{
+	top: -40px;
+	font-size: 16px;
+}
+
+/***********************  Task 23 && 24 **************************/
+
+.wrap-3{
+	min-height: 300px;
+	font-size: 16px;
+	font-family: Arial;
+	color: #555;
+	text-align: left;
+}
+.wrap-3 > label{
+	cursor: pointer;
+}
+.menu{
+	position: absolute;
+	left: -200px;
+	transition: .5s;
+}
+.wrap-3 input[type="checkbox"]{
+	display: none;
+}
+.wrap-3 input[type="checkbox"]:checked + label + .menu{
+	left: 0;
+}
+.menu li ul{
+	height: 0;
+	font-size: 0;
+	transition: .5s;
+}
+.menu li:hover ul{
+
+	height: 75px;
+	font-size: 16px;
+}
+.menu li{
+	margin: 5px 0;
+}
+.menu li a{
+	color: #555;
+	text-transform: uppercase;
+}
