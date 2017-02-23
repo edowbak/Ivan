@@ -186,17 +186,19 @@ h2{
 /**************************  Task 20 *****************************/
 
 .slice{
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	display: inline-block;
-	margin: 30px;
-	padding-top: 10px;
-	font-size: 18px;
+	margin: 10px;
+	padding-top: 8px;
+	position: relative;
+	font-size: 22px;
 	color: #555;
 	font-family: Arial;
 	cursor: pointer;
 	box-shadow: 2px 2px 5px 0px #555;
-	transition: .3s;
+	transition: .15s linear;
+	box-sizing: border-box;
 }
 .slice:nth-child(odd){
 	background-color: #ccccff;
@@ -209,7 +211,8 @@ h2{
 .slice:hover{
 	box-shadow: 4px 4px 15px 0px #555;
 	transform: rotate(0deg);
-	transform: scale(1.5);
+	transform: scale(1.2);
+	z-index: 100;
 }
 
 /*********************************  Task 22 **********************************/
@@ -232,6 +235,9 @@ h2{
 	font-size: 20px;
 	transition: .5s;
 }
+label{
+	cursor: text;
+}
 .wrap-2__span{
 	position: absolute;
 	top: 10px;
@@ -246,6 +252,11 @@ h2{
 	top: -40px;
 	font-size: 16px;
 }
+.form:checked .wrap-2__span{
+	top: -40px;
+	font-size: 16px;
+}
+
 
 /***********************  Task 23 && 24 **************************/
 
